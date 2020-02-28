@@ -1,0 +1,464 @@
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe, файл: C:\Users\alexa\Downloads\CodeBlocks\TX\TXLib.h, строка: 12252, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-02-23 20:43:39 +0400], Instance: 0x005052F4 (32-bit), Flags: CMdRe0, Thread: 0x4A74 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042237D in C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe: txBitBlt() at C:/Users/alexa/Downloads/CodeBlocks/TX/TXLib.h (12252)
+
+# 1 0x0042B777 in C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe: main() at C:/Users/alexa/Documents/codeblock/Новая папка/imageGame.cpp (17):
+
+     15:         txSetFillColor(TX_BLACK);
+     16:         txClear();
+=>   17:         txBitBlt (txDC(), 0,0,x,0,ForestImage);
+     18: 
+     19:         if (txGetAsyncKeyState (VK_LEFT)) x--;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double) at C:\Users\alexa\Downloads\CodeBlocks\TX\TXLib.h (12252):
+
+  12250:     {
+  12251: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>12252: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  12253: 
+  12254: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in int main() at C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.cpp (17):
+
+     15:         txSetFillColor(TX_BLACK);
+     16:         txClear();
+=>   17:         txBitBlt (txDC(), 0,0,x,0,ForestImage);
+     18: 
+     19:         if (txGetAsyncKeyState (VK_LEFT)) x--;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-02-23 20:43:39 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\alexa\Downloads\CodeBlocks\TX\TXLib.h
+Compiled:	Feb 28 2020 22:23:48, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 28 2020 22:24:06
+
+Run file:	C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe
+Directory:	C:\Users\alexa\Documents\codeblock\Новая папка
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe, файл: C:\Users\alexa\Downloads\CodeBlocks\TX\TXLib.h, строка: 12252, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-02-23 20:43:39 +0400], Instance: 0x005052F4 (32-bit), Flags: CMdRe0, Thread: 0x3658 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042237D in C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe: txBitBlt() at C:/Users/alexa/Downloads/CodeBlocks/TX/TXLib.h (12252)
+
+# 1 0x0042B777 in C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe: main() at C:/Users/alexa/Documents/codeblock/Новая папка/imageGame.cpp (17):
+
+     15:         txSetFillColor(TX_BLACK);
+     16:         txClear();
+=>   17:         txBitBlt (txDC(), 0,0,x,0,ForestImage);
+     18: 
+     19:         if (txGetAsyncKeyState (VK_LEFT)) x--;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double) at C:\Users\alexa\Downloads\CodeBlocks\TX\TXLib.h (12252):
+
+  12250:     {
+  12251: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>12252: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  12253: 
+  12254: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in int main() at C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.cpp (17):
+
+     15:         txSetFillColor(TX_BLACK);
+     16:         txClear();
+=>   17:         txBitBlt (txDC(), 0,0,x,0,ForestImage);
+     18: 
+     19:         if (txGetAsyncKeyState (VK_LEFT)) x--;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-02-23 20:43:39 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\alexa\Downloads\CodeBlocks\TX\TXLib.h
+Compiled:	Feb 28 2020 22:25:12, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 28 2020 22:25:20
+
+Run file:	C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe
+Directory:	C:\Users\alexa\Documents\codeblock\Новая папка
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe, файл: C:\Users\alexa\Downloads\CodeBlocks\TX\TXLib.h, строка: 12252, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#2: TXLib [Ver: 00173a, Rev: 165, Date: 2020-02-23 20:43:39 +0400], Instance: 0x005052F4 (32-bit), Flags: CMdRe0, Thread: 0x3658 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042237D in C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe: txBitBlt() at C:/Users/alexa/Downloads/CodeBlocks/TX/TXLib.h (12252)
+
+# 1 0x0042B777 in C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe: main() at C:/Users/alexa/Documents/codeblock/Новая папка/imageGame.cpp (17):
+
+     15:         txSetFillColor(TX_BLACK);
+     16:         txClear();
+=>   17:         txBitBlt (txDC(), 0,0,x,0,ForestImage);
+     18: 
+     19:         if (txGetAsyncKeyState (VK_LEFT)) x--;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double) at C:\Users\alexa\Downloads\CodeBlocks\TX\TXLib.h (12252):
+
+  12250:     {
+  12251: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>12252: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  12253: 
+  12254: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in int main() at C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.cpp (17):
+
+     15:         txSetFillColor(TX_BLACK);
+     16:         txClear();
+=>   17:         txBitBlt (txDC(), 0,0,x,0,ForestImage);
+     18: 
+     19:         if (txGetAsyncKeyState (VK_LEFT)) x--;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-02-23 20:43:39 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\alexa\Downloads\CodeBlocks\TX\TXLib.h
+Compiled:	Feb 28 2020 22:25:12, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 28 2020 22:25:20
+
+Run file:	C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe
+Directory:	C:\Users\alexa\Documents\codeblock\Новая папка
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe, файл: C:\Users\alexa\Downloads\CodeBlocks\TX\TXLib.h, строка: 12252, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#3: TXLib [Ver: 00173a, Rev: 165, Date: 2020-02-23 20:43:39 +0400], Instance: 0x005052F4 (32-bit), Flags: CMdRe0, Thread: 0x3658 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042237D in C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe: txBitBlt() at C:/Users/alexa/Downloads/CodeBlocks/TX/TXLib.h (12252)
+
+# 1 0x0042B777 in C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe: main() at C:/Users/alexa/Documents/codeblock/Новая папка/imageGame.cpp (17):
+
+     15:         txSetFillColor(TX_BLACK);
+     16:         txClear();
+=>   17:         txBitBlt (txDC(), 0,0,x,0,ForestImage);
+     18: 
+     19:         if (txGetAsyncKeyState (VK_LEFT)) x--;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double) at C:\Users\alexa\Downloads\CodeBlocks\TX\TXLib.h (12252):
+
+  12250:     {
+  12251: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>12252: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  12253: 
+  12254: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in int main() at C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.cpp (17):
+
+     15:         txSetFillColor(TX_BLACK);
+     16:         txClear();
+=>   17:         txBitBlt (txDC(), 0,0,x,0,ForestImage);
+     18: 
+     19:         if (txGetAsyncKeyState (VK_LEFT)) x--;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-02-23 20:43:39 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\alexa\Downloads\CodeBlocks\TX\TXLib.h
+Compiled:	Feb 28 2020 22:25:12, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 28 2020 22:25:20
+
+Run file:	C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe
+Directory:	C:\Users\alexa\Documents\codeblock\Новая папка
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe, файл: C:\Users\alexa\Downloads\CodeBlocks\TX\TXLib.h, строка: 12252, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-02-23 20:43:39 +0400], Instance: 0x005052F4 (32-bit), Flags: CMdRe0, Thread: 0x4A60 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042237D in C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe: txBitBlt() at C:/Users/alexa/Downloads/CodeBlocks/TX/TXLib.h (12252)
+
+# 1 0x0042B777 in C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe: main() at C:/Users/alexa/Documents/codeblock/Новая папка/imageGame.cpp (17):
+
+     15:         txSetFillColor(TX_BLACK);
+     16:         txClear();
+=>   17:         txBitBlt (txDC(), 0,0,x,0,ForestImage);
+     18: 
+     19:         if (txGetAsyncKeyState (VK_LEFT)) x--;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double) at C:\Users\alexa\Downloads\CodeBlocks\TX\TXLib.h (12252):
+
+  12250:     {
+  12251: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>12252: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  12253: 
+  12254: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in int main() at C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.cpp (17):
+
+     15:         txSetFillColor(TX_BLACK);
+     16:         txClear();
+=>   17:         txBitBlt (txDC(), 0,0,x,0,ForestImage);
+     18: 
+     19:         if (txGetAsyncKeyState (VK_LEFT)) x--;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-02-23 20:43:39 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\alexa\Downloads\CodeBlocks\TX\TXLib.h
+Compiled:	Feb 28 2020 22:25:12, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 28 2020 22:26:36
+
+Run file:	C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe
+Directory:	C:\Users\alexa\Documents\codeblock\Новая папка
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe, файл: C:\Users\alexa\Downloads\CodeBlocks\TX\TXLib.h, строка: 12252, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-02-23 20:43:39 +0400], Instance: 0x005052F4 (32-bit), Flags: CMdRe0, Thread: 0xC28 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042237D in C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe: txBitBlt() at C:/Users/alexa/Downloads/CodeBlocks/TX/TXLib.h (12252)
+
+# 1 0x0042B777 in C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe: main() at C:/Users/alexa/Documents/codeblock/Новая папка/imageGame.cpp (17):
+
+     15:         txSetFillColor(TX_BLACK);
+     16:         txClear();
+=>   17:         txBitBlt (txDC(), 0, 0,x,0,ForestImage, 0, 0);
+     18: 
+     19:         if (txGetAsyncKeyState (VK_LEFT)) x--;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double) at C:\Users\alexa\Downloads\CodeBlocks\TX\TXLib.h (12252):
+
+  12250:     {
+  12251: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>12252: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  12253: 
+  12254: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in int main() at C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.cpp (17):
+
+     15:         txSetFillColor(TX_BLACK);
+     16:         txClear();
+=>   17:         txBitBlt (txDC(), 0, 0,x,0,ForestImage, 0, 0);
+     18: 
+     19:         if (txGetAsyncKeyState (VK_LEFT)) x--;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-02-23 20:43:39 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\alexa\Downloads\CodeBlocks\TX\TXLib.h
+Compiled:	Feb 28 2020 22:29:14, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 28 2020 22:29:22
+
+Run file:	C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe
+Directory:	C:\Users\alexa\Documents\codeblock\Новая папка
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe, файл: C:\Users\alexa\Downloads\CodeBlocks\TX\TXLib.h, строка: 12252, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-02-23 20:43:39 +0400], Instance: 0x005052F4 (32-bit), Flags: CMdRe0, Thread: 0x456C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042237D in C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe: txBitBlt() at C:/Users/alexa/Downloads/CodeBlocks/TX/TXLib.h (12252)
+
+# 1 0x0042B775 in C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe: main() at C:/Users/alexa/Documents/codeblock/Новая папка/imageGame.cpp (17):
+
+     15:         txSetFillColor(TX_BLACK);
+     16:         txClear();
+=>   17:         txBitBlt (txDC(), 0, 0, 800, 600,ForestImage, 0, 0);
+     18: 
+     19:         if (txGetAsyncKeyState (VK_LEFT)) x--;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double) at C:\Users\alexa\Downloads\CodeBlocks\TX\TXLib.h (12252):
+
+  12250:     {
+  12251: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>12252: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  12253: 
+  12254: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in int main() at C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.cpp (17):
+
+     15:         txSetFillColor(TX_BLACK);
+     16:         txClear();
+=>   17:         txBitBlt (txDC(), 0, 0, 800, 600,ForestImage, 0, 0);
+     18: 
+     19:         if (txGetAsyncKeyState (VK_LEFT)) x--;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-02-23 20:43:39 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\alexa\Downloads\CodeBlocks\TX\TXLib.h
+Compiled:	Feb 28 2020 22:32:38, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 28 2020 22:32:46
+
+Run file:	C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe
+Directory:	C:\Users\alexa\Documents\codeblock\Новая папка
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe, файл: C:\Users\alexa\Downloads\CodeBlocks\TX\TXLib.h, строка: 12252, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 165, Date: 2020-02-23 20:43:39 +0400], Instance: 0x005052F4 (32-bit), Flags: CMdRe0, Thread: 0x4464 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x0042237D in C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe: txBitBlt() at C:/Users/alexa/Downloads/CodeBlocks/TX/TXLib.h (12252)
+
+# 1 0x0042B775 in C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe: main() at C:/Users/alexa/Documents/codeblock/Новая папка/imageGame.cpp (17):
+
+     15:         txSetFillColor(TX_BLACK);
+     16:         txClear();
+=>   17:         txBitBlt (txDC(), 0, 0, 800, 600,ForestImage, 0, 0);
+     18: 
+     19:         if (txGetAsyncKeyState (VK_LEFT)) x--;
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double) at C:\Users\alexa\Downloads\CodeBlocks\TX\TXLib.h (12252):
+
+  12250:     {
+  12251: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>12252: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  12253: 
+  12254: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in int main() at C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.cpp (17):
+
+     15:         txSetFillColor(TX_BLACK);
+     16:         txClear();
+=>   17:         txBitBlt (txDC(), 0, 0, 800, 600,ForestImage, 0, 0);
+     18: 
+     19:         if (txGetAsyncKeyState (VK_LEFT)) x--;
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 165, Date: 2020-02-23 20:43:39 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	C:\Users\alexa\Downloads\CodeBlocks\TX\TXLib.h
+Compiled:	Feb 28 2020 22:33:01, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Feb 28 2020 22:33:10
+
+Run file:	C:\Users\alexa\Documents\codeblock\Новая папка\imageGame.exe
+Directory:	C:\Users\alexa\Documents\codeblock\Новая папка
+
+--------------------------------------------------

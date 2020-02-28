@@ -1,0 +1,23 @@
+
+#include "TXLib.h"
+
+int main()
+    {
+    txCreateWindow (800, 600);
+    int x=0, y=0;
+    HDC ForestImage = txLoadImage ("ForestImage.jpg");
+    while (!txGetAsyncKeyState (VK_ESCAPE))
+        {
+        txSetFillColor(TX_BLACK);
+        tx_Clear();
+        HDC = txBitBlt (txDC, 0,0,0,0,ForestImage);
+        if (!ForestImage)
+              txMessageBox ("Не могу загрузить фон из Background.bmp", "Да, я скопировал это из примера");
+        if (txGetAsyncKeyState (VK_LEFT)) x--;
+        if (txGetAsyncKeyState (VK_RIGHT)) x++;
+        txSleep(15);
+        }
+
+    txDeleteDC(ForestImage);
+    return 0;
+    }
